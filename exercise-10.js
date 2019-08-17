@@ -1,4 +1,5 @@
 function changeMe(arr) {
+	debugger
 	// console.log(typeof(arr[0][0]));
   var Obj = {};
   if (arr.length == 0) {
@@ -9,6 +10,8 @@ function changeMe(arr) {
     Obj.firstName = arr[i][0];
     Obj.lastName = arr[i][1];
 		Obj.gender = arr[i][2];
+				// return value from typeof is not object's Type property,
+				// - but object's Type name in String.
 		if (typeof(arr[i][3]) != "number" || arr[i][3] > 2019) {
     	Obj.age = 'Invalid Birth Year';
 		} else {
