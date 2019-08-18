@@ -35,6 +35,7 @@ function shoppingTime(memberId, money) {
 	Receipt.memberId = memberId;
 	Receipt.money = money;
 	for (var i = 0; i < sale.length; i++) {
+		debugger
 		if (money >= sale[i].price) {
 			money -= sale[i].price
 			bought.push(sale[i].goods);
